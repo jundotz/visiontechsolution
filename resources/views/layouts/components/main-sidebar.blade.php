@@ -13,10 +13,10 @@
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-        <img src="{{ URL::asset('/images/avatars/dog-avatar.png') }}" class="img-circle elevation-2" alt="User Image">
+            <img src="{{ URL::asset('/images/avatars/dog-avatar.png') }}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-        <a href="#" class="d-block">{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}</a>
+            <router-link to="/profile" class="d-block">{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}</router-link>
         </div>
     </div>
 
@@ -24,10 +24,10 @@
     <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link to="/" class="nav-link">
                     <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>Dashboard</p>
-                </a>
+                </router-link>
             </li>
             <li class="nav-item has-treeview">
                 <a href="#" class="nav-link">
